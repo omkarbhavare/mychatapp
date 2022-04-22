@@ -4,8 +4,8 @@ import Chat from "./Chat";
 import { ContextProvider } from "../context/ContextProvider";
 
 
-{/*Home Component to display Welcome if user has not loggedin 
-& display Chat if user has loggedin */}
+/*Home Component to display Welcome if user has not loggedin 
+& display Chat if user has loggedin */
 
 const Home = () => {
   const { loader, user } = React.useContext(ContextProvider);
@@ -15,3 +15,4 @@ const Home = () => {
 };
 
 export default Home;
+

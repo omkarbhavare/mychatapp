@@ -2,7 +2,7 @@ import React from "react";
 import './welcome.css'
 
 
-{/*Display component if user has looged out of chat room*/}
+/*Display component if user has looged out of chat room*/
 const Welcome = () => {
   return (
     <div className="welcome">
@@ -15,3 +15,4 @@ const Welcome = () => {
 };
 
 export default Welcome;
+

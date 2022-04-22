@@ -1,13 +1,13 @@
-import React, { useState, useContext } from "react";
+import React, {  useContext } from "react";
 import Input from "./Input";
 import { ContextProvider } from "../context/ContextProvider";
 
-{/*display message componenet*/}
+/*display message componenet*/
 const Chat = () => {
   const { allMsg, user } = useContext(ContextProvider);
 
 
-  {/*Structure of message component on screen */}
+  /*Structure of message component on screen */
   return (
     <div className="messages">
       {allMsg.map((message) =>
@@ -37,3 +37,4 @@ const Chat = () => {
 };
 
 export default Chat;
+

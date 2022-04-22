@@ -4,14 +4,14 @@ const Input = () => {
   const { sendMessage } = useContext(ContextProvider);
   const [msg, setMsg] = useState("");
   
-  {/*sending message component*/}
+  /*sending message component*/
   const sendMsg = (e) => {
     e.preventDefault();
     sendMessage(msg);
     setMsg("");
   };
 
-  {/*typing message structure*/}
+  /*typing message structure*/
   return (
     <div className="input__form">
       <form onSubmit={sendMsg}>
@@ -30,3 +30,4 @@ const Input = () => {
 };
 
 export default Input;
+

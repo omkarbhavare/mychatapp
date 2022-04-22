@@ -1,21 +1,21 @@
 import React from "react";
 import { ContextProvider } from "../context/ContextProvider";
 
-{/*Navbar Section */}
+/*Navbar Section */
 const Navbar = () => {
   const { register, user, loader, logout } = React.useContext(ContextProvider);
 
-  {/*To Authenticate & Login User*/}
+  /*To Authenticate & Login User*/
   const userRegister = () => {
     register();
   };
 
-  {/*LogOut USer*/}
+  /*LogOut USer*/
   const userLogout = () => {
     logout();
   };
 
-  {/*If User is login display following navbar*/}
+  /*If User is login display following navbar*/
   const checkUser = () => {
     return !loader ? (
       user ? (
@@ -32,7 +32,7 @@ const Navbar = () => {
           </li>{" "}
         </div>
       ) : 
-      {/*If user if logout Display following Navbar*/}
+      /*If user if logout Display following Navbar*/
       (
         <div className="navbar__links">
           <li>
@@ -47,7 +47,7 @@ const Navbar = () => {
     );
   };
 
-  {/*Navbar Component*/}
+  /*Navbar Component*/
   return (
     <div className="navbar">
       <div className="navbar__container">
@@ -59,3 +59,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

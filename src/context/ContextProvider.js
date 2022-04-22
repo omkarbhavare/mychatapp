@@ -9,8 +9,9 @@ const ContextFun = (props) => {
   const [allMsg, setAllMsg] = useState([]);
 
 
-  {/*To authenticate user & login*/}
+  
   const register = () => {
+    //To authenticate user & login
     const provider = new firebase.auth.GoogleAuthProvider();
     firebase
       .auth()
@@ -21,16 +22,18 @@ const ContextFun = (props) => {
   };
 
 
-  {/*function to logout from chatroom*/}
+  
   const logout = () => {
+    //function to logout from chatroom
     auth.signOut().then(() => {
       setUser(null);
     });
   };
 
 
-  {/*Details to fetch while sending message*/}
+ 
   const sendMessage = (msg) => {
+     //Details to fetch while sending message
     db.collection("messages").add({
       msg,
       photo: user.photoURL,
@@ -70,3 +73,4 @@ const ContextFun = (props) => {
 };
 
 export default ContextFun;
+
